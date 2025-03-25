@@ -1,11 +1,7 @@
-//{ Driver Code Starts
-#include <bits/stdc++.h>
+// Given an array of positive integers arr[], return the second largest element from the array. If the second largest element doesn't exist then return -1.
 
-using namespace std;
+// Note: The second largest element should not be equal to the largest element.
 
-// } Driver Code Ends
-
-// User function template for C++
 class Solution
 {
 public:
@@ -33,31 +29,3 @@ public:
         return (second == INT_MIN) ? -1 : second;
     }
 };
-
-//{ Driver Code Starts.
-
-int main()
-{
-    int t;
-    cin >> t;
-    cin.ignore();
-    while (t--)
-    {
-        vector<int> arr;
-        string input;
-        getline(cin, input);
-        stringstream ss(input);
-        int number;
-        while (ss >> number)
-        {
-            arr.push_back(number);
-        }
-        Solution ob;
-        int ans = ob.getSecondLargest(arr);
-        cout << ans << endl;
-        cout << "~" << endl;
-    }
-    return 0;
-}
-
-// } Driver Code Ends
